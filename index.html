@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>OndontoUSA</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/img/logo-g.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -20,7 +20,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/logo.png" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/logo-g.png" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -213,8 +213,8 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Entre em contato</h2>
+                    <h3 class="section-subheading text-muted">Nos deixe uma mensagem !</h3>
                 </div>
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
@@ -251,6 +251,26 @@
                             </div>
                         </div>
                     </div>
+                    
+                    
+                    <script>
+                        function sendEmail() {
+                            var name = document.getElementById("name").value;
+                            var email = document.getElementById("email").value;
+                            var phone = document.getElementById("phone").value;
+                            var message = document.getElementById("message").value;
+
+                            var subject = "Contact from " + name;
+                            var body = "Name: " + name + "%0D%0A" + 
+                                    "Email: " + email + "%0D%0A" +
+                                    "Phone: " + phone + "%0D%0A%0D%0A" +
+                                    "Message: " + message;
+
+                            window.open("mailto:rafah.26ferreira@hotmail.com?subject=" + subject + "&body=" + body, '_blank');
+                        }
+
+                    </script>
+                    
                     <!-- Submit success message-->
                     <!---->
                     <!-- This is what your users will see when the form-->
@@ -260,7 +280,6 @@
                             <div class="fw-bolder">Form submission successful!</div>
                             To activate this form, sign up at
                             <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                         </div>
                     </div>
                     <!-- Submit error message-->
@@ -269,7 +288,7 @@
                     <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit"  onclick="sendEmail()">Send Message</button></div>
                 </form>
             </div>
         </section>
@@ -279,13 +298,9 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/fazperformar?igshid=MzRlODBiNWFlZA==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/fazperformar?igshid=MzRlODBiNWFlZA==" target="_blank"  aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/fazperformar?igshid=MzRlODBiNWFlZA==" target="_blank"  aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
             </div>
